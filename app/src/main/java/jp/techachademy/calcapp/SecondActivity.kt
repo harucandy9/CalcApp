@@ -26,11 +26,11 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun calcNum : Double (id:String, num1:Double, num2:Double){
-        when(v.id){
-            R.id.plusButton -> return num1+num2
-            R.id.minusButton -> return num1-num2
-            R.id.multiplyButton -> return num1*num2
-            R.id.divideButton -> return num1/num2
-        }
-    }
+//        when(v.id){
+//            R.id.plusButton -> return num1+num2
+//            R.id.minusButton -> return num1-num2
+//            R.id.multiplyButton -> return num1*num2
+//            R.id.divideButton -> return num1/num2
+//        }
+//    }
 }
