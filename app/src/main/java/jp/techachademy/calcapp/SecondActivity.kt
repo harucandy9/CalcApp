@@ -13,24 +13,10 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val id = intent.getStringExtra("id")
-        val num1 = intent.getDoubleExtra("num1",0.00)
-        val num2 = intent.getDoubleExtra("num2", 0.00)
+        val res = intent.getDoubleExtra("res",0.00)
 
-        Log.d("test",id)
-        Log.d("test",num1.toString())
-        Log.d("test",num2.toString())
-
-        resTextView.text = calcNum(id,num1,num2).toString()
+        resTextView.text = res.toString()
 
     }
 
-    private fun calcNum : Double (id:String, num1:Double, num2:Double){
-//        when(v.id){
-//            R.id.plusButton -> return num1+num2
-//            R.id.minusButton -> return num1-num2
-//            R.id.multiplyButton -> return num1*num2
-//            R.id.divideButton -> return num1/num2
-//        }
-//    }
 }
